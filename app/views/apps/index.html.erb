@@ -1,0 +1,11 @@
+<h1>Transaction Successful!</h1>
+<p>Find me in app/views/apps/index.html.erb</p>
+
+<h3>Transaction ID: <%= @transaction.trx_id %></h3>
+
+<h5>Seller: <%= @transaction.seller_name %></h5>
+<h5>Delivery Service: <%= @transaction.delivery_service %></h5>
+<h5>Date order: <%= @transaction.date_order.strftime("%d/%m/%Y") %></h5>
+<h5>Address Shipment: <%= @transaction.address_ship %></h5>
+
+<a href="/apps/index">Main menu</a>
